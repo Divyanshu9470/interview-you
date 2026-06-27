@@ -14,6 +14,8 @@ Cross-platform desktop app scaffold built with **Tauri + React + TypeScript**.
 - [Node.js](https://nodejs.org/) 20+
 - [Rust](https://www.rust-lang.org/tools/install)
 - Tauri system dependencies for your OS: https://tauri.app/start/prerequisites/
+- Linux (Ubuntu/Debian) packages for desktop bundling:
+  `sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libayatana-appindicator3-dev librsvg2-dev patchelf`
 
 ## Local development
 
