@@ -5,7 +5,7 @@ Cross-platform desktop app scaffold built with **Tauri + React + TypeScript**.
 ## Included scaffold
 
 - Chat screen UI for interview practice flow
-- Settings screen with local API key storage (`localStorage`)
+- Settings screen with API key input for the current app session
 - Tauri desktop shell for Windows, macOS, and Linux
 - GitHub Actions workflow for cross-platform desktop builds
 

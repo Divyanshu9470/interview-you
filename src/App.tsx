@@ -9,8 +9,6 @@ type Message = {
   author: "user" | "assistant";
 };
 
-const API_KEY_STORAGE = "interview-you.api-key";
-
 function App() {
   const [activeView, setActiveView] = useState<View>("chat");
   const [messages, setMessages] = useState<Message[]>([
@@ -21,7 +19,7 @@ function App() {
     },
   ]);
   const [draftMessage, setDraftMessage] = useState("");
-  const [apiKey, setApiKey] = useState(() => localStorage.getItem(API_KEY_STORAGE) ?? "");
+  const [apiKey, setApiKey] = useState("");
   const [saveStatus, setSaveStatus] = useState("");
 
   function onSendMessage(event: FormEvent<HTMLFormElement>) {
@@ -44,8 +42,7 @@ function App() {
 
   function onSaveApiKey(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    localStorage.setItem(API_KEY_STORAGE, apiKey.trim());
-    setSaveStatus("Saved API key locally for this desktop app.");
+    setSaveStatus("API key set for this session.");
   }
 
   return (
