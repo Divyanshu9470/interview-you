@@ -1,0 +1,153 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background-color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab,
+button,
+input {
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1;
+  font: inherit;
+}
+
+.tab,
+button {
+  padding: 0.5rem 0.85rem;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.message {
+  margin: 0;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.message.user {
+  background: #e0ecff;
+}
+
+.message.assistant {
+  background: #f1f5f9;
+}
+
+.composer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+}
+
+.settings-form {
+  max-width: 520px;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.status {
+  margin: 0;
+  color: #047857;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #e2e8f0;
+    background-color: #0f172a;
+  }
+
+  .tab,
+  button,
+  input,
+  .panel {
+    border-color: #334155;
+    background-color: #111827;
+    color: #e2e8f0;
+  }
+
+  .tab.active {
+    border-color: #60a5fa;
+    color: #60a5fa;
+  }
+
+  .message.user {
+    background: #1e3a8a;
+  }
+
+  .message.assistant {
+    background: #1f2937;
+  }
+
+  .status {
+    color: #34d399;
+  }
+}
