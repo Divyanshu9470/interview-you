@@ -134,6 +134,131 @@ input {
   opacity: 0.7;
 }
 
+.practice-categories {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.category-card span {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.practice-active {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.practice-category-tag {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #2563eb;
+}
+
+.practice-question {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.practice-timer {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.practice-timer.low {
+  color: #dc2626;
+}
+
+.practice-answer {
+  width: 100%;
+  resize: vertical;
+  font: inherit;
+  padding: 0.65rem 0.75rem;
+}
+
+.practice-your-answer {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.practice-feedback {
+  background: #f1f5f9;
+  border-radius: 0.5rem;
+  padding: 0.85rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.practice-score {
+  margin: 0;
+  font-weight: 700;
+}
+
+.practice-feedback p:last-child {
+  margin: 0;
+}
+
+.practice-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button.secondary {
+  background: transparent;
+}
+
+.practice-history {
+  margin-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.practice-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.practice-history-header h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.history-item {
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.75rem;
+}
+
+.history-meta {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.history-question {
+  margin: 0.2rem 0 0;
+  font-size: 0.9rem;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #e2e8f0;
@@ -164,5 +289,26 @@ input {
 
   .status {
     color: #34d399;
+  }
+
+  .category-card span {
+    color: #94a3b8;
+  }
+
+  .practice-category-tag {
+    color: #60a5fa;
+  }
+
+  .practice-feedback,
+  .history-item {
+    background: #1f2937;
+  }
+
+  .practice-history {
+    border-color: #334155;
+  }
+
+  .history-meta {
+    color: #94a3b8;
   }
 }
