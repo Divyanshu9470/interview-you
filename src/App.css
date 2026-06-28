@@ -119,6 +119,21 @@ input {
   color: #047857;
 }
 
+.hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.message.error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.message.pending {
+  opacity: 0.7;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #e2e8f0;
